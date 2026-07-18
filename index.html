@@ -5,9 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ZymX Productions</title>
 <script>
+(function(){
 
-alert(navigator.userAgent);
+var ua = navigator.userAgent.toLowerCase();
 
+var lite = false;
+
+
+if(ua.indexOf("opera mini") !== -1){
+    lite = true;
+}
+
+
+var android = ua.match(/android\s([0-9\.]+)/);
+
+if(android){
+
+    var version = parseFloat(android[1]);
+
+    if(version < 6){
+        lite = true;
+    }
+
+}
+
+
+if(lite){
+    window.location.replace("lite.html");
+}
+
+})();
 </script>
     
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
