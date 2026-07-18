@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZymX Productions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0b0b0b,#111,#006dff);
+}
+
+header h1{
+font-size:70px;
+margin-bottom:15px;
+}
+
+header p{
+font-size:22px;
+color:#ddd;
+}
+
+.button{
+display:inline-block;
+margin-top:35px;
+padding:15px 35px;
+background:#007bff;
+color:white;
+text-decoration:none;
+border-radius:12px;
+transition:.3s;
+}
+
+.button:hover{
+background:#0055cc;
+transform:translateY(-4px);
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:90px 20px;
+}
+
+h2{
+font-size:42px;
+margin-bottom:25px;
+color:#4aa8ff;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:35px;
+}
+
+.card{
+background:#161616;
+padding:25px;
+border-radius:18px;
+transition:.3s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#007bff;
+}
+
+.timeline{
+border-left:3px solid #007bff;
+padding-left:30px;
+}
+
+.event{
+margin-bottom:35px;
+}
+
+.event h3{
+color:#4aa8ff;
+margin-bottom:8px;
+}
+
+footer{
+background:#111;
+text-align:center;
+padding:40px;
+margin-top:60px;
+}
+
+.contact{
+font-size:18px;
+line-height:35px;
+}
+
+.status{
+display:inline-block;
+background:#2ecc71;
+padding:5px 15px;
+border-radius:20px;
+font-size:14px;
+margin-top:15px;
+}
+
+nav{
+position:fixed;
+width:100%;
+padding:20px;
+background:rgba(0,0,0,.5);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:100;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.logo{
+font-size:25px;
+font-weight:bold;
+color:#4aa8ff;
+}
+
+html{
+scroll-behavior:smooth;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+ZymX Productions
+</div>
+
+<div>
+<a href="#about">O nas</a>
+<a href="#projects">Projekty</a>
+<a href="#history">Historia</a>
+<a href="#contact">Kontakt</a>
+</div>
+
+</nav>
+
+<header>
+
+<div>
+
+<h1>ZymX Productions</h1>
+
+<p>Tworzymy aplikacje, dodatki do gier, animacje i wiele więcej.</p>
+
+<div class="status">
+Aktualny projekt: Żappka Lite (Alpha)
+</div>
+
+<br>
+
+<a class="button" href="#projects">
+Poznaj nasze projekty
+</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2>O nas</h2>
+
+<p>
+ZymX Productions to niezależne studio tworzące projekty hobbystyczne.
+Naszym celem jest tworzenie ciekawych aplikacji, dodatków do gier,
+animacji oraz innych projektów związanych z programowaniem i grafiką.
+</p>
+
+</section>
+
+<section id="projects">
+
+<h2>Aktualne projekty</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📱 Żappka Lite</h3>
+
+<p>
+Lekka aplikacja inspirowana Żappką dla starszych urządzeń z Androidem.
+
+<br><br>
+
+Status: <b>Alpha</b>
+
+<br><br>
+
+Tworzona wspólnie z <b>Faslo Studios</b>.
+</p>
+</div>
+
+<div class="card">
+<h3>🎮 Addony do gier</h3>
+
+<p>
+W przyszłości planujemy tworzyć dodatki do różnych gier, między innymi Garry's Mod.
+</p>
+
+</div>
+
+<div class="card">
+<h3>🎬 Animacje</h3>
+
+<p>
+Planujemy również tworzyć krótkie animacje oraz inne kreatywne projekty.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="history">
+
+<h2>Historia</h2>
+
+<div class="timeline">
+
+<div class="event">
+<h3>2023</h3>
+
+<p>
+Studio rozpoczęło działalność jako <b>S15 Studios</b>.
+Inspiracją było F17 Studios (obecnie Faslo Studios).
+Początkowo tworzyliśmy fake systemy operacyjne w Scratchu oraz eksperymentowaliśmy z własnymi projektami.
+</p>
+
+</div>
+
+<div class="event">
+
+<h3>2024</h3>
+
+<p>
+Zmiana logo oraz dalszy rozwój pierwszych projektów.
+</p>
+
+</div>
+
+<div class="event">
+
+<h3>2025</h3>
+
+<p>
+Studio zmieniło nazwę z <b>S15 Studios</b> na <b>S15 Productions</b>.
+Po pewnym czasie działalność została zawieszona.
+</p>
+
+</div>
+
+<div class="event">
+
+<h3>2026</h3>
+
+<p>
+Powstało <b>ZymX Productions</b>.
+Rozpoczęliśmy prace nad aplikacją <b>Żappka Lite</b> oraz planujemy rozwijać kolejne projekty.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Kontakt</h2>
+
+<div class="contact">
+
+📞 Telefon:<br>
+<b>692 356 399</b>
+
+<br><br>
+
+📧 E-mail:<br>
+<b>support@zymxprod.github.com</b>
+
+<br><br>
+
+⚠️ Adres e-mail jest obecnie planowany i może ulec zmianie.
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>ZymX Productions</h3>
+
+<p>
+© 2026 ZymX Productions
+<br>
+Tworzymy z pasji ❤️
+</p>
+
+</footer>
+
+<script>
+
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+card.addEventListener("mousemove",e=>{
+
+const x=e.offsetX/card.offsetWidth*20-10;
+const y=e.offsetY/card.offsetHeight*20-10;
+
+card.style.transform=`rotateX(${-y}deg) rotateY(${x}deg)`;
+
+});
+
+card.addEventListener("mouseleave",()=>{
+
+card.style.transform="rotateX(0deg) rotateY(0deg)";
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
