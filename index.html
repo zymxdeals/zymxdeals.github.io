@@ -7,22 +7,37 @@
 <script>
 (function(){
 
-    var ua = navigator.userAgent;
+var ua = navigator.userAgent.toLowerCase();
 
-    var android = ua.match(/Android\s([0-9\.]+)/);
+var oldAndroid = false;
 
-    if(android){
+var android = ua.match(/android\s([0-9\.]+)/);
 
-        var version = parseFloat(android[1]);
+if(android){
 
-        if(version < 6){
-            window.location.href = "lite.html";
-        }
+    var version = parseFloat(android[1]);
 
+    if(version < 6){
+        oldAndroid = true;
     }
+
+}
+
+
+// dodatkowo wykrywanie Opery Mini
+if(ua.indexOf("opera mini") !== -1){
+    oldAndroid = true;
+}
+
+
+// przekierowanie
+if(oldAndroid){
+    window.location.href = "lite.html";
+}
 
 })();
 </script>
+    
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
